@@ -15,7 +15,7 @@ function randomFunction(key){
     let random = Math.floor(Math.random() * arr.length) 
     let arrRandomElement = arr[random]
 
-    player2Img.src = `./src/asesst/images/${arrRandomElement}.png`
+    player2Img.src = `./src/assets/images/${arrRandomElement}.png`
 
     if(arrRandomElement == "p"){
         player2ImgName.innerHTML = "Paper"
@@ -76,7 +76,7 @@ console.log({scissorsBtn});
 rockBtn.addEventListener("click",function(){
     rockBtn = "r"
     if(rockBtn === "r"){
-        player1Img.src = './src/asesst/images/r.png'
+        player1Img.src = './src/assets/images/r.png'
         player1ImgName.innerHTML = "Rock"
         randomFunction(rockBtn)
     }
@@ -85,7 +85,7 @@ rockBtn.addEventListener("click",function(){
 paperBtn.addEventListener("click",function(){
     paperBtn = "p"
     if(paperBtn === "p"){
-        player1Img.src = './src/asesst/images/p.png'
+        player1Img.src = './src/assets/images/p.png'
         player1ImgName.innerHTML = "Paper"
         randomFunction(paperBtn)
     }
@@ -94,7 +94,7 @@ paperBtn.addEventListener("click",function(){
 scissorsBtn.addEventListener("click",function(){
     scissorsBtn = "s"
     if(scissorsBtn === "s"){
-        player1Img.src = './src/asesst/images/s.png'
+        player1Img.src = './src/assets/images/s.png'
         player1ImgName.innerHTML = "Scissors"
         randomFunction(scissorsBtn)
     }

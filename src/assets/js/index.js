@@ -15,7 +15,7 @@ function randomFunction(key){
     let random = Math.floor(Math.random() * arr.length) 
     let arrRandomElement = arr[random]
 
-    player2Img.src = `./src/asesst/images/${arrRandomElement}.png`
+    player2Img.src = `./src/assets/images/${arrRandomElement}.png`
 
     if(arrRandomElement == "p"){
         player2ImgName.innerHTML = "Paper"
@@ -76,16 +76,16 @@ window.document.addEventListener("keydown", function(event) {
         return 0;
     }
     else if(key === "p"){
-        player1Img.src = './src/asesst/images/p.png'
+        player1Img.src = './src/assets/images/p.png'
         player1ImgName.innerHTML = "Paper"
         randomFunction(key)
     }else if(key === "r"){
-        player1Img.src = './src/asesst/images/r.png'
+        player1Img.src = './src/assets/images/r.png'
         player1ImgName.innerHTML = "Rock"
         randomFunction(key)
 
     }else{
-        player1Img.src = './src/asesst/images/s.png'
+        player1Img.src = './src/assets/images/s.png'
         player1ImgName.innerHTML = "Scissors"
         randomFunction(key)
 
